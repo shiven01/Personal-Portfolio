@@ -10,14 +10,34 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">The Boys</a></li>
-            <li><a href="#">Contact Info</a></li>
-        </ul>
-    </nav>
-  </body>
+  <div class="container">
+    <header class="nav">
+      <nav>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./theBoys.html">The Boys</a></li>
+              <li><a href="./contactInfo.html">Contact Info</a></li>
+          </ul>
+      </nav>
+    </header>
 
+    <div class="slider-container">
+      <div class="slider">
+          <img src="image1.jpg" alt="The Boys">
+          <img src="image2.jpg" alt="Omicron Best PC">
+          <img src="image3.jpg" alt="Classic HS Flick">
+      </div>
+      <div class="slider-controls">
+          <button class="prev-btn">&lt;</button>
+          <div class="image-description"></div>
+          <button class="next-btn">&gt;</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Shiven Shekar Website. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="slider.js"></script>
 </html>

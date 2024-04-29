@@ -7,6 +7,16 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
+/*Icons*/
+.icon-link {
+    text-decoration: none;
+    color: #3C493F
+}
+
+.icon-link:visited {
+    color: inherit;
+}
+
 /*Image Slider*/
 .slider-container {
     position: relative;
