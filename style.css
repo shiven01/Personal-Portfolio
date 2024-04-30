@@ -7,6 +7,10 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
+main {
+    flex: 1;
+}
+
 /*Navigation*/
 .navbar {
     background: #7E8D85;
@@ -54,12 +58,17 @@
 /*Icons*/
 .icon-link {
     text-decoration: none;
-    color: #A2E3C4;
+    color: #3C493F;
+}
+
+.icon-link:hover {
+    color: #3C493F;
 }
 
 /*Bio*/
 .bio {
-    padding: 10px;
+    align-items: center;
+    padding: 20px 0px 0px 20px;
 }
 
 /*Projects*/
@@ -70,7 +79,8 @@
     margin: 0 auto;
     width: 75%;
     background-color: #7E8D85;
-    color: #3C493F;
+    color: black;
+    /*#3C493F*/
     border-radius: 10px;
 }
 
