@@ -11,6 +11,7 @@
 .navbar {
     background: #7E8D85;
     padding: 10px 0;
+    border-radius: 10px;
 }
 
 .navdiv {
@@ -53,7 +54,47 @@
 /*Icons*/
 .icon-link {
     text-decoration: none;
-    color: #3C493F
+    color: #A2E3C4;
+}
+
+/*Bio*/
+.bio {
+    padding: 10px;
+}
+
+/*Projects*/
+.projects {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 75%;
+    background-color: #7E8D85;
+    color: #3C493F;
+    border-radius: 10px;
+}
+
+.projects-image {
+    padding: 0 10px 0 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.projects-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    max-height: auto;
+}
+
+.projects-description {
+    flex: 1;
+    padding: 15px;
+}
+
+/*Footer*/
+.footer {
+    padding: 10px;
 }
 
 /*Image Slider*/
