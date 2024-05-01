@@ -1,3 +1,4 @@
+/*Image Slider Controls */
 const slider = document.querySelector('.slider');
 const images = slider.querySelectorAll('img');
 const prevBtn = document.querySelector('.prev-btn');
