@@ -1,9 +1,9 @@
 /*Image Slider Controls */
-const slider = document.querySelector('.slider');
-const images = slider.querySelectorAll('img');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-const imageDescription = document.querySelector('.image-description');
+const slider = document.querySelector(".slider");
+const images = slider.querySelectorAll("img");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const imageDescription = document.querySelector(".image-description");
 
 let currentIndex = 0;
 const slideInterval = setInterval(nextSlide, 3000);
@@ -21,16 +21,16 @@ function prevSlide() {
 }
 
 function updateImageDescription() {
-  const altText = images[currentIndex].getAttribute('alt');
+  const altText = images[currentIndex].getAttribute("alt");
   imageDescription.textContent = altText;
 }
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
   clearInterval(slideInterval);
   prevSlide();
 });
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener("click", () => {
   clearInterval(slideInterval);
   nextSlide();
 });

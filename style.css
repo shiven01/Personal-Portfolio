@@ -1,197 +1,203 @@
 /*Main Container*/
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #F0F7F4;
-    font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f7f4;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 /*Navigation*/
 .navbar {
-    background: #7E8D85;
-    padding: 10px 0;
-    border-radius: 10px;
+  background: #7e8d85;
+  padding: 10px 0;
+  border-radius: 10px;
 }
 
 .navdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .nav-left,
 .nav-right {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-left li,
 .nav-right li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .nav-left li:last-child,
 .nav-right li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .navdiv a {
-    color: #F0F7F4;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+  color: #f0f7f4;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .navdiv a:hover {
-    background-color: #3C493F;
+  background-color: #3c493f;
 }
 
 /*Icons*/
 .icon-link {
-    text-decoration: none;
-    color: #3C493F;
+  text-decoration: none;
+  color: #3c493f;
 }
 
 .icon-link:hover {
-    color: #3C493F;
+  color: #3c493f;
 }
 
 /*Bio*/
 .bio {
-    align-items: center;
-    padding: 20px 0px 0px 20px;
+  align-items: center;
+  padding: 20px 0px 0px 20px;
 }
 
 /*Projects*/
 .projects {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 auto;
-    width: 75%;
-    background-color: #7E8D85;
-    color: black;
-    border-radius: 10px;
-    transition: background-color 0.2s ease-in-out 0.05s, color 0.2s ease-in-out 0.05s;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 75%;
+  background-color: #7e8d85;
+  color: black;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out 0.05s,
+    color 0.2s ease-in-out 0.05s;
 }
 
 .hidden-link {
-    display: none;
+  display: none;
 }
 
 .spacing-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #A2E3C4;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #a2e3c4;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
 }
 
 .projects:hover {
-    color: white;
-    background-color: #3C493F;
-    cursor: crosshair;
+  color: white;
+  background-color: #3c493f;
+  cursor: crosshair;
 }
 
 .projects-image {
-    padding: 0 10px 0 10px;
-    flex: 1;
-    display: flex;
-    align-items: center;
+  padding: 0 10px 0 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .projects-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    max-height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  max-height: auto;
 }
 
 .projects-image img:hover {
-    cursor: crosshair;
+  cursor: crosshair;
 }
 
 .projects-description {
-    flex: 1;
-    padding: 15px;
+  flex: 1;
+  padding: 15px;
 }
 
 /*Footer*/
 .footer {
-    padding: 10px;
+  padding: 10px;
 }
 
 /*Image Slider*/
 .main-slider-container {
-    padding: 20px 50px;
+  padding: 20px 50px;
 }
 
 .slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;transition: background-color 0.5s ease-in-out 0.2s;
-    border-radius: 10px;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider img {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-  }
-  
-  .slider-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-  }
-  
-  .image-description {
-    text-align: center;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-  }
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out 0.2s;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.image-description {
+  text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 /*Fading Out Effect*/
 .fade-out {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px; /* Adjust the height of the fade-out effect */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the height of the fade-out effect */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .fade-out.hidden {
-    opacity: 0;
+  opacity: 0;
 }
