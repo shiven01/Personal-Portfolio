@@ -85,8 +85,14 @@ main {
     color 0.2s ease-in-out 0.05s;
 }
 
-.hidden-link {
-  display: none;
+.projects-description a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projects-description a:hover {
+  cursor: pointer;
 }
 
 .spacing-circle {

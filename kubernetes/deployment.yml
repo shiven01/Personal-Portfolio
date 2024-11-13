@@ -1,10 +1,9 @@
-# kubernetes/deployment.yml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: portfolio
+  name: portfolio-deployment
 spec:
-  replicas: 2  # Runs 2 copies of your website
+  replicas: 2
   selector:
     matchLabels:
       app: portfolio
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
       - name: portfolio
-        image: portfolio  # Your Docker image
+        image: shiven0/personal-portfolio:latest
         ports:
         - containerPort: 80
 ---
@@ -24,8 +23,9 @@ kind: Service
 metadata:
   name: portfolio-service
 spec:
-  type: LoadBalancer  # Makes your website accessible
+  type: LoadBalancer
   ports:
   - port: 80
+    targetPort: 80
   selector:
     app: portfolio
