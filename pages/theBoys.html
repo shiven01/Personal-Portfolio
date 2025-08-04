@@ -3,6 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E0NPMMFPY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-1E0NPMMFPY', {
+        // Privacy-compliant settings
+        anonymize_ip: true,
+        allow_ad_personalization_signals: false,
+
+        // Enhanced ecommerce and engagement tracking
+        enhanced_measurement: {
+          scroll_events: true,
+          outbound_clicks: true,
+          site_search: true,
+          video_engagement: true,
+          file_downloads: true
+        },
+
+        // Performance optimization
+        send_page_view: true,
+        page_title: document.title,
+        page_location: window.location.href
+      });
+
+      // Event tracking for portfolio-specific actions
+      function trackPortfolioEvent(action, section) {
+        gtag('event', action, {
+          event_category: 'Portfolio Interaction',
+          event_label: section,
+          value: 1
+        });
+      }
+
+      // Track external link clicks
+      document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A' && e.target.href.startsWith('http') && !e.target.href.includes(window.location.hostname)) {
+          gtag('event', 'click', {
+            event_category: 'External Link',
+            event_label: e.target.href,
+            transport_type: 'beacon'
+          });
+        }
+      });
+    </script>
+
     <!--Internet Explorer Compatibility Update-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Boys</title>
